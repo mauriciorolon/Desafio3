@@ -8,7 +8,9 @@
 }
 
 ul {
+    display: flex;
     list-style: none;
+    justify-content: end;
 }
 
 a {
@@ -20,24 +22,28 @@ a {
     color: aquamarine;
 }
 
-nav {
+.cabecera {
     display: flex;
-    position: relative;
+    justify-content: space-between;
     color: aqua;
-    list-style-type: none;
-}
-
-.lista {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    margin: 20px;
 }
 
 .cabecera-div {
-    height: 30px;
-    width: 30px;
+    display: flex;
+    justify-self: start;
 }
+
+.cabecera-logo {
+    width: 300px;
+}
+
+.navegador-lista {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
 
 .form_contacto {
     background-color: rgb(67, 130, 182);
