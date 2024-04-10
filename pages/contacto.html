@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
 </head>
 
@@ -25,23 +25,35 @@
             </nav>
         </header>
         <main>
-            <form action="form.php" method="POST">
-                <div>
+            <form class="form_contacto" action="form.php" method="POST">
+                <div class="form-contacto-grupo">
                     <label for="">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Mauricio Rolón">
+                    <input class="form-contacto-grupo-textarea" type="text" name="nombre" id="nombre"
+                        placeholder="Mauricio Rolón">
+                </div>
+                <div class="form-contacto-grupo">
                     <label for="">Contraseña</label>
-                    <input type="password" name="pass" id="pass">
+                    <input class="form-contacto-grupo-textarea" type="password" name="pass" id="pass"
+                        placeholder="Contraseña">
+                </div>
+                <div class="form-contacto-grupo">
                     <select name="" id="">
                         <option value="">Titulo</option>
                         <option value="">Ingenieria</option>
                     </select>
-                    <p>Comentarios</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <p>Aceptar terminos y condiciones</p>
-                    <input type="checkbox" name="" id="">
-                    <input type="submit" value="Enviar">
                 </div>
+                <div class="form-contacto-grupo">
+                    <p>Comentarios</p>
+                    <textarea class="form-contacto-grupo-textarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-contacto-grupo">
+                    <p>Aceptar terminos y condiciones</p>
+                    <input class="form-contacto-grupo-textarea" type="checkbox" name="" id="">
 
+                </div>
+                <div class="form-contacto-grupo">
+                    <input class="form-contacto-grupo-textarea" type="submit" value="Enviar">
+                </div>
             </form>
         </main>
         <footer>

@@ -1,6 +1,12 @@
 /*
     Comentario
 */
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 ul {
     list-style: none;
 }
@@ -31,4 +37,23 @@ nav {
 .cabecera-div {
     height: 30px;
     width: 30px;
+}
+
+.form_contacto {
+    background-color: rgb(67, 130, 182);
+    width: 400px;
+    margin: 40px auto 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-contacto-grupo {
+    width: 100%;
+    padding: 10px auto 10px auto;
+}
+
+.form-contacto-grupo-textarea {
+    width: 100%;
+    gap: 20px;
+    padding: 5px;
 }
