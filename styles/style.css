@@ -1,65 +1,46 @@
-/*
-    Comentario
-*/
-* {
-    margin: 0;
-    box-sizing: border-box;
-
+#div-body {
+    background-color: rgb(140, 152, 219);
+    display: inline-block;
 }
+
+header {
+    color: beige;
+    background-color: rgb(86, 86, 207);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 ul {
+    list-style-type: none;
     display: flex;
-    list-style: none;
-    justify-content: end;
+    align-items: end;
 }
 
-a {
+ul li {
+    color: beige;
     text-decoration: none;
-}
-
-#body-div {
-    background-color: black;
-    color: aquamarine;
-}
-
-.cabecera {
-    display: flex;
-    justify-content: space-between;
-    color: aqua;
-}
-
-.cabecera-div {
-    display: flex;
-    justify-self: start;
+    margin-left: 40px;
 }
 
 .cabecera-logo {
-    width: 300px;
+    height: 200px;
 }
 
-.navegador-lista {
+footer {
     display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    margin: 20px;
+    flex-wrap: wrap;
 }
 
-
-.form_contacto {
-    background-color: rgb(67, 130, 182);
-    width: 400px;
-    margin: 40px auto 40px auto;
-    padding: 25px;
-    border-radius: 10px;
+.mapa {
+    width: 300px;
+    height: 300px;
+    align-items: end;
 }
 
-.form-contacto-grupo {
-    width: 100%;
-    padding: 10px auto 10px auto;
-}
-
-.form-contacto-grupo-textarea {
-    width: 100%;
-    gap: 20px;
-    padding: 5px;
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(3, 1fr);
 }
