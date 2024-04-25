@@ -1,13 +1,48 @@
-#div-body {
-    background-color: rgb(140, 152, 219);
-    display: inline-block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-header {
-    color: beige;
-    background-color: rgb(86, 86, 207);
+
+.navegador {
+    background-color: rgb(140, 152, 219);
+    width: 100%;
+    position: sticky;
+    top: 0px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.navegador-item {
+    display: flex;
+    gap: 20;
+}
+
+.navegador-item a {
+    display: block;
+    padding: 20px 50 px;
+    color: antiquewhite;
+    text-decoration: none;
+
+}
+
+.portada {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+}
+
+.img-portada {
+    width: 100%;
 }
 
 
@@ -24,7 +59,9 @@ ul li {
     margin-left: 40px;
 }
 
-.cabecera-logo {
+.encabezado-logo {
+    display: flex;
+    position: initial;
     height: 200px;
 }
 
